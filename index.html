@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>               
+        .bg{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .blurred_bg{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>       
+    <div class="blurred_bg position-fixed top-0 start-0 w-100 h-100"></div>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg rounded-start">
+            </div>
+            <div class="col bg-white rounded-end">
+                <div class="text-end my-2">
+                    <img src="img/logo.png" alt="logo" width="48">
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <form  action="#">
+                    <div class="mb-4">                        
+                        <input type="text" class="form-control" name="user" placeholder="Usuario">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" class="form-control" name="user" placeholder="Contraseña">
+                    </div>
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" id="0" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="#">Regístrate</a></span>
+                        <br>
+                        <span><a href="#">Recuperar contraseña</a></span>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
